@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   
+   <title>Oak's Gym</title>
+   <meta charset="utf-8" >
+   <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <link href ="style6.css" rel="stylesheet" media="all">
+  <link href ="style7.css" rel="stylesheet" media="screen">
+  <link href ="style8.css" rel="stylesheet" media="print">
+</head>
+
+<body>
+   <header>
+      <img src="bigpika.jpeg" alt="Pika" >
+      <nav class="horizontal"> <a id="navicon" href="#"><img src="healing.png" alt="" ></a>
+         <ul>
+           <li><a href="home.html">Home</a></li>
+             <li><a href="memberships.html">Membership</a></li>
+             <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="contact.html">Location</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+   <section id="main">
+      <article>
+        <h1 id="acc1">Store</h1>
+         <img src="store.jpg" alt="" />
+         <p> The store or better know as the Poke Mart provide unique pokeballs at a lower cost. We've evaluated our fields to be at a rather fustrating point for new trainers so we give timer balls,heal balls, utlra ball,etc at twenty five percent of normal prices. The our heal items such as potions,edible items,and held onto items we sell are sold for fifty percent of the normal price.</p>
+         <h2 id="acc2">Heal Station</h2>
+         <p>Nobody's gonna charge you for healing ever. We have upgarded stations due to Profesor Oak's research so it takes about two-thirds the amount of time to heal your pokemon here. </p
+        
+         <h2 id="acc1">Store and Specialist</h2>
+         <img src="movespec.jpg" alt="" />
+         <p>When he's not on break we have our move specialist who is happy to help any trainer decide what move to give their pokemon based on their wants or needs.</p>
+         <h2 id="ci2"></h2>
+
+        <h2 id="acc1">Traing Area</h2>
+            <img src="bull3v1.jpg_large" alt="" />
+           <p>In our training area we have multiple stages for trainers to test out their moves and skills. Our trainers are observed by a member of our staff along with pokemon at all times to for saftey regulations. We offer test battles for trainers that simulate the gyms they're trying to beat,specific match ups, and elemental based battle lessons.</p>
+      </article>
+   </section>
+   
+   <footer>
+      Oak's Gym in Pallet Town of the Kanto region
+   </footer>
+  <script>
+    async function initMap() {
+    // Request needed libraries.
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    const map = new Map(document.getElementById("map"), {
+      center: { lat: 37.42, lng: -122.1 },
+      zoom: 14,
+      mapId: "4504f8b37365c3d0",
+    });
+    const priceTag = document.createElement("div");
+
+    priceTag.className = "price-tag";
+    priceTag.textContent = "$2.5M";
+
+    const marker = new AdvancedMarkerElement({
+      map,
+      position: { lat: 37.42, lng: -122.1 },
+      content: priceTag,
+    });
+  }
+
+  initMap();
+</script>
+</body>
+</html>
